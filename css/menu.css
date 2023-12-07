@@ -1,0 +1,49 @@
+nav {
+  background-color: #333;
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.menu-principal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  font-size: 1.5rem;
+}
+
+li {
+  padding: 10px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+.menu-principal .submenus {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  width: 15vw;
+  padding-left: 0;
+  text-align: left;
+}
+
+.menu-principal li:hover > .submenus {
+  display: flex;
+  flex-direction: column;
+}
